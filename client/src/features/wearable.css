@@ -1,0 +1,45 @@
+.sim-panel { padding: 16px; margin-bottom: 13px; }
+.sim-note { margin: 0 0 10px; color: #93a5c4; font-size: 10.5px; line-height: 1.55; }
+.preset-row { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 12px; }
+.preset-chip { display: inline-flex; align-items: center; gap: 6px; color: #dfe8fb; background: rgba(54,201,255,.08); border: 1px solid rgba(80,170,230,.35); border-radius: 18px; padding: 6px 11px; font-size: 10px; }
+.preset-chip:hover { background: rgba(54,201,255,.18); }
+.sim-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px 18px; align-items: end; }
+.slider-row { display: grid; gap: 5px; font-size: 10px; color: #b9c8e3; }
+.slider-row b { color: #fff; float: right; }
+.slider-row input[type=range] { width: 100%; accent-color: #8f5cff; }
+.toggle-row { display: flex; align-items: center; gap: 8px; font-size: 10.5px; color: #c9d6ee; }
+.feed-row { display: grid; gap: 4px; }
+.feed-row small { color: #8da2c4; font-size: 9px; }
+.alert-stack { display: grid; gap: 8px; margin-bottom: 13px; }
+.alert-banner { display: flex; gap: 10px; align-items: flex-start; border-radius: 11px; padding: 10px 13px; font-size: 11px; line-height: 1.5; border: 1px solid; }
+.alert-banner.critical { background: rgba(252,61,33,.14); border-color: rgba(252,90,60,.6); color: #ffd7cf; }
+.alert-banner.warning { background: rgba(255,180,60,.1); border-color: rgba(255,190,90,.45); color: #ffe6bb; }
+.alert-banner.notice { background: rgba(54,150,255,.1); border-color: rgba(90,160,255,.4); color: #cfe3ff; }
+.alert-banner svg { flex: none; margin-top: 2px; }
+.seg-toggle { display: inline-flex; border: 1px solid #354b7a; border-radius: 9px; overflow: hidden; }
+.seg-toggle button { background: #101d3b; color: #a9b9d6; border: 0; padding: 6px 11px; font-size: 10px; }
+.seg-toggle button.active { background: linear-gradient(100deg, #6a38dc, #4b3bb5); color: #fff; }
+.live-tag { color: #58e7a8; border: 1px solid rgba(63,222,160,.35); background: rgba(20,120,80,.12); border-radius: 20px; padding: 5px 8px; font-size: 8px; letter-spacing: .7px; }
+.baseline-band { fill: rgba(120,160,255,.13); }
+.skip-button { background: transparent; color: #aebbd4; border: 1px solid #3b4f7d; border-radius: 9px; padding: 7px 11px; font-size: 11px; }
+.idle-note { color: #93a5c4; font-size: 11px; padding: 6px 0; }
+.view-panel { padding: 18px; margin-bottom: 13px; }
+.view-panel h2 { margin: 0 0 10px; font-size: 15px; }
+.chart-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 13px; margin-bottom: 13px; }
+.telemetry-card { padding: 14px; }
+.telemetry-card h3 { margin: 0 0 6px; font-size: 12px; color: #dce6fa; }
+.telemetry-card .health-chart { height: 130px; }
+.stat-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; margin-bottom: 13px; }
+.stat-tile { border: 1px solid rgba(98,127,205,.25); border-radius: 12px; padding: 10px 12px; background: rgba(9,22,48,.6); }
+.stat-tile span { display: block; color: #8da2c4; font-size: 9px; letter-spacing: .5px; text-transform: uppercase; }
+.stat-tile b { font-size: 17px; }
+.packet-pre, .sbar-pre { margin: 0; padding: 12px; border-radius: 10px; background: #060f22; border: 1px solid rgba(98,127,205,.25); color: #bcd0f2; font: 11px/1.55 ui-monospace, Menlo, Consolas, monospace; overflow: auto; white-space: pre-wrap; }
+.data-table { width: 100%; border-collapse: collapse; font-size: 11px; }
+.data-table th, .data-table td { text-align: left; padding: 8px 9px; border-bottom: 1px solid rgba(98,127,205,.2); }
+.data-table th { color: #8da2c4; font-weight: 600; font-size: 9px; letter-spacing: .6px; text-transform: uppercase; }
+.btn-row { display: flex; gap: 9px; flex-wrap: wrap; margin-top: 12px; }
+.bar-fill.exertion { background: linear-gradient(90deg, #1fa86b, #5ee6a5); }
+.cause-icon.exertion { color: #5ee6a5; }
+@media (max-width: 1180px) { .sim-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .stat-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 800px) { .chart-grid { grid-template-columns: 1fr; } }
+@media (max-width: 520px) { .sim-grid { grid-template-columns: 1fr; } }
