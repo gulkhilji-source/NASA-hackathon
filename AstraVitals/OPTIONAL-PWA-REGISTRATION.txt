@@ -1,1 +1,0 @@
-The production client now registers /service-worker.js automatically from src/main.jsx. The worker caches the app shell and non-personal mission metadata only; private crew health and wellbeing API responses are deliberately never cached.

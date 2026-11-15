@@ -1,8 +1,0 @@
-node_modules
-dist
-.env
-.DS_Store
-coverage
-
-# Runtime crew health records are private and must not be committed
-server/data/*.json
